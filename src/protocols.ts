@@ -18,3 +18,24 @@ export type RequestError = {
   name: string,
   message: string,
 };
+
+export type AddressType = {
+  cep: string,
+  logradouro: string,
+  complemento?: string,
+  bairro: string,
+  localidade: string,
+  uf: string,
+  ibge: number,
+  gia?: string,
+  ddd: number,
+  siafi: number
+};
+
+export type AddressFilter =  {
+  logradouro: string,
+  complemento?: string,
+  bairro: string,
+  cidade: string,
+  uf: string,
+}
